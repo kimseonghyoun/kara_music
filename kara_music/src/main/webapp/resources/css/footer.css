@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#footer{
+    border-top: 1px solid grey;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footerIn{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fMenu{
+    margin-bottom: 25px;
+}
+
+.fMenu ul{    
+    display: flex;
+}
+
+.fMenu ul li{
+    margin-right: 15px;
+}
+
+.fMenu li a{
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+}
+
+.fInfo{
+    color: rgb(32, 32, 32);
+}
+
+.fInfo a{
+    color: rgb(32, 32, 32);
+}    
+
+.fInfo .name1{
+    margin-right: 15px;
+}
+
+.kg1{
+    margin-bottom: 15px;
+}
+
+.kg2{
+    margin-bottom: 15px;
+    color: rgb(32, 32, 32);
+}
+
+.kg3{        
+    color: rgb(32, 32, 32);
+}
+
+.kg3 a{    
+    color: rgb(32, 32, 32);
+}
+
+.kg3 span{    
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 3px;
+}

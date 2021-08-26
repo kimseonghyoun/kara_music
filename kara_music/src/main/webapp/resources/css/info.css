@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap{
+    width: 100%;
+    min-width: 1140px; 
+    position: relative;
+}
+
+#container{
+	width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;        
+}
+
+.main_info{
+	margin: 50px 0;
+	display: flex;	 
+}
+
+.info_img li{
+    width: 100px;
+    margin: 0 10px 20px 10px;    
+}
+
+.info_img li img{
+    width: 100%;
+    height: auto;
+}
+
+.info_text{
+	margin-left: 50px;
+}
+
+#main_note{
+	width: 700px;
+	margin-top: 50px;		
+}
+

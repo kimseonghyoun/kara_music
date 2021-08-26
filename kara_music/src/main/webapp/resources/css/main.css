@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap{
+    width: 100%;
+    min-width: 1140px; 
+    position: relative;
+}
+
+.m_title{
+    font-size: 20px;
+    color: rgb(32, 32, 32);    
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.main1{    
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.main1 ul{
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;    
+}
+
+.main1 li{
+    width: 200px;
+    margin: 0 10px 20px 10px;    
+}
+
+.main1 li img{
+    width: 100%;
+    height: auto;
+}
+
+
+.m_info{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(32, 32, 32);    
+    text-align: center;
+}
+
+.m_next_01, .m_prev_01{
+    position: absolute;
+    top: 0;
+}
+
+.m_prev_01{
+    left: 100px;
+}
+
+.m_next_01{
+    left: 155px;
+}
+
+.m_prev_01 a, .m_next_01 a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../imges/btn_arr.png);
+    text-indent: -99999px;
+}
+
+.m_prev_01 a{
+    background-position: -0 -52px;
+}
+
+.m_page{
+    position: absolute;
+    top: 2px;
+    left: 130px;
+}
+
+.m_page a{
+    color:rgb(32, 32, 32);  
+}
+
+.m_next_01 a{
+    background-position: -27px -52px;
+}
+
+
+.m_kind_01{        
+    display: flex;         
+    position: absolute;    
+    top: 5px;
+    right: 70px;
+}
+
+.m_kind_01 a{        
+    color:rgb(32, 32, 32);    
+    font-size: 15px;
+}    
+
+.m_kind_01 p:not(:first-child)::before{        
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #333;
+    margin:0 7px;
+}
+
+.m_more{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.m_more a{
+    color:rgb(32, 32, 32);    
+}
+
+.m_more a:hover{
+    color: rgb(150, 97, 248);
+}
+
+.m_more a span{
+    display: inline-block;
+    vertical-align: top;    
+    margin-top: 5px;
+}
+
+.main2{    
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main2 ul{
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;    
+}
+
+.main2 li{
+    width: 200px;
+    margin: 0 10px 20px 10px;    
+}
+
+.main2 li img{
+    width: 100%;
+    height: auto;
+}
+
+.m_next_02, .m_prev_02{
+    position: absolute;
+    top: 0;
+}
+
+.m_prev_02{
+    left: 100px;
+}
+
+.m_next_02{
+    left: 155px;
+}
+
+.m_prev_02 a, .m_next_02 a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../imges/btn_arr.png);
+    text-indent: -99999px;
+}
+
+.m_prev_02 a{
+    background-position: -0 -52px;
+}
+
+.m_page{
+    position: absolute;
+    top: 2px;
+    left: 130px;
+}
+
+.m_page a{
+    color:rgb(32, 32, 32);  
+}
+
+.m_next_02 a{
+    background-position: -27px -52px;
+}
+
+.m_kind_02{        
+    display: flex;         
+    position: absolute;    
+    top: 5px;
+    right: 70px;
+}
+
+.m_kind_02 a{        
+    color:rgb(32, 32, 32);            
+    font-size: 15px;
+}    
+
+.m_kind_02 p:not(:first-child)::before{        
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #333;
+    margin:0 7px;
+}
+
+.main3{    
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main3 ul{
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;    
+}
+
+.main3 li{
+    width: 200px;
+    margin: 0 10px 20px 10px;    
+}
+
+.main3 li img{
+    width: 100%;
+    height: auto;
+}
+
+.main4{    
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main4 ul{
+    display: flex;  
+    justify-content: space-between;  
+}
+
+.main4 li{ 
+    margin: 0 10px 10px 10px;    
+}
+
+.mv_main{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;    
+    overflow: hidden;    
+    position: relative;
+}
+
+.mv_main ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mv_main li{
+    width: 300px;
+    margin: 0 10px 20px 10px;    
+}
