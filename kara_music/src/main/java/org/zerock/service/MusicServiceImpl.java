@@ -2,6 +2,7 @@ package org.zerock.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.zerock.domain.MemberVO;
 import org.zerock.domain.MusicVO;
 import org.zerock.mapper.MusicMapper;
 
@@ -15,5 +16,11 @@ public class MusicServiceImpl implements MusicService{
 	public MusicVO info(String record) {
 		// TODO Auto-generated method stub
 		return mapper.info(record);		
+	}
+
+	@Override
+	public void member(MemberVO member) {
+		// TODO Auto-generated method stub
+		mapper.member(member);
 	}	
 }

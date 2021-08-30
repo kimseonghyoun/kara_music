@@ -6,4 +6,9 @@
 	<select id="info" resultType="org.zerock.domain.MusicVO">
 		select * from album_table where record = #{record};
 	</select>
+	
+	<insert id="member"> 
+  		insert into user_table(user_id, user_pwd, user_nm, email, phone, joindate)
+		values(#{user_id}, #{user_pwd}, #{user_nm}, #{email}, #{phone}, sysdate());			
+	</insert>
 </mapper>	

@@ -31,253 +31,253 @@
                                 <a href="info?record=kpop_01">
                                     <p><img src="../resources/imges/kpop/kpop_01.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">러블리즈 1집</p>
+                                <p class="m_info">러블리즈</p>
                             </li>
                             <li>
                                 <a href="info?record=kpop_02">
                                     <p><img src="../resources/imges/kpop/kpop_02.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">우예린 1집</p>                        
+                                <p class="m_info">우예린</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_03">
                                     <p><img src="../resources/imges/kpop/kpop_03.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">레드벨벳 1집</p>                        
+                                <p class="m_info">레드벨벳</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_04">
                                     <p><img src="../resources/imges/kpop/kpop_04.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">소우주 1집</p>                        
+                                <p class="m_info">소우주</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_05">
                                     <p><img src="../resources/imges/kpop/kpop_05.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">와이찬 1집</p>                        
+                                <p class="m_info">와이찬</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_06">
                                     <p><img src="../resources/imges/kpop/kpop_06.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">정피트 1집</p>                        
+                                <p class="m_info">정피트</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_07">
                                     <p><img src="../resources/imges/kpop/kpop_07.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">더 어쿠스틱 1집</p>                        
+                                <p class="m_info">더 어쿠스틱</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_08">
                                     <p><img src="../resources/imges/kpop/kpop_08.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">민제 1집</p>                        
+                                <p class="m_info">민제</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_09">
                                     <p><img src="../resources/imges/kpop/kpop_09.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">어라운드 1집</p>                        
+                                <p class="m_info">어라운드</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_10">
                                     <p><img src="../resources/imges/kpop/kpop_10.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">깜장고무신 1집</p>                        
+                                <p class="m_info">깜장고무신</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
                     <div class="m_content main1_kpop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_11">
                                     <p><img src="../resources/imges/kpop/kpop_11.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">걸스데이 1집</p>
+                                <p class="m_info">걸스데이</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_12">
                                     <p><img src="../resources/imges/kpop/kpop_12.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">소녀시대 1집</p>                        
+                                <p class="m_info">소녀시대</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_13">
                                     <p><img src="../resources/imges/kpop/kpop_13.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">엄정화 1집</p>                        
+                                <p class="m_info">엄정화</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_14">
                                     <p><img src="../resources/imges/kpop/kpop_14.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">카라 1집</p>                        
+                                <p class="m_info">카라</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_15">
                                     <p><img src="../resources/imges/kpop/kpop_15.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">포미닛 1집</p>                        
+                                <p class="m_info">포미닛</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_16">
                                     <p><img src="../resources/imges/kpop/kpop_16.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">시크릿 1집</p>                        
+                                <p class="m_info">시크릿</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_17">
                                     <p><img src="../resources/imges/kpop/kpop_17.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">이수영 1집</p>                        
+                                <p class="m_info">이수영</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_18">
                                     <p><img src="../resources/imges/kpop/kpop_18.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">시스타 1집</p>                        
+                                <p class="m_info">시스타</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_19">
                                     <p><img src="../resources/imges/kpop/kpop_19.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">알리 1집</p>                        
+                                <p class="m_info">알리</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_20">
                                     <p><img src="../resources/imges/kpop/kpop_20.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">에일리 1집</p>                        
+                                <p class="m_info">에일리</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
                     <div class="m_content main1_pop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_01">
                                     <p><img src="../resources/imges/pop/pop_01.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">브리트니 스피어스 1집</p>
+                                <p class="m_info">브리트니 스피어스</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_02">
                                     <p><img src="../resources/imges/pop/pop_02.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">제시카 심슨 1집</p>                        
+                                <p class="m_info">제시카 심슨</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_03">
                                     <p><img src="../resources/imges/pop/pop_03.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">에이스 오브 베이스 1집</p>                        
+                                <p class="m_info">에이스 오브 베이스</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_04">
                                     <p><img src="../resources/imges/pop/pop_04.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">머라이어캐리 1집</p>                        
+                                <p class="m_info">머라이어캐리</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_05">
                                     <p><img src="../resources/imges/pop/pop_05.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">셀린디온 1집</p>                        
+                                <p class="m_info">셀린디온</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_06">
                                     <p><img src="../resources/imges/pop/pop_06.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">케이티 페리 1집</p>                        
+                                <p class="m_info">케이티 페리</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_07">
                                     <p><img src="../resources/imges/pop/pop_07.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">스위트 박스 1집</p>                        
+                                <p class="m_info">스위트 박스</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_08">
                                     <p><img src="../resources/imges/pop/pop_08.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">마룬5 1집</p>                        
+                                <p class="m_info">마룬5</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_09">
                                     <p><img src="../resources/imges/pop/pop_09.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">노다웃 1집</p>                        
+                                <p class="m_info">노다웃</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_10">
                                     <p><img src="../resources/imges/pop/pop_10.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">토니 블랙스톤 1집</p>                        
+                                <p class="m_info">토니 블랙스톤</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
                     <div class="m_content main1_pop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_11">
                                     <p><img src="../resources/imges/pop/pop_11.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">휘트니 휴스톤 1집</p>
+                                <p class="m_info">휘트니 휴스톤</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_12">
                                     <p><img src="../resources/imges/pop/pop_12.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">시크릿가든 1집</p>                        
+                                <p class="m_info">시크릿가든</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_13">
                                     <p><img src="../resources/imges/pop/pop_13.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">뮤즈 1집</p>                        
+                                <p class="m_info">뮤즈</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_14">
                                     <p><img src="../resources/imges/pop/pop_14.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">비욘세 1집</p>                        
+                                <p class="m_info">비욘세</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_15">
                                     <p><img src="../resources/imges/pop/pop_15.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">게리무어 1집</p>                        
+                                <p class="m_info">게리무어</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_16">
                                     <p><img src="../resources/imges/pop/pop_16.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">테일러 스위프트 1집</p>                        
+                                <p class="m_info">테일러 스위프트</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_17">
                                     <p><img src="../resources/imges/pop/pop_17.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">스콜피온즈 1집</p>                        
+                                <p class="m_info">스콜피온즈</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_18">
                                     <p><img src="../resources/imges/pop/pop_18.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">저스틴 비버 1집</p>                        
+                                <p class="m_info">저스틴 비버</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_19">
                                     <p><img src="../resources/imges/pop/pop_19.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">퀸 1집</p>                        
+                                <p class="m_info">퀸</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_20">
                                     <p><img src="../resources/imges/pop/pop_20.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">메탈리카 1집</p>                        
+                                <p class="m_info">메탈리카</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
@@ -297,7 +297,7 @@
                     <p><a href="">해외</a></p>
                 </div>  <!--.m_kind_01-->
                 <div class="m_more">                    
-                    <a href="">
+                    <a href="../music/new_album">
                         <p>더보기
                             <span><img src="../resources/imges/icon_plus.png" alt=""></span>
                         </p>
@@ -311,256 +311,256 @@
                     <div class="m_content main2_kpop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_21">
                                     <p><img src="../resources/imges/kpop/kpop_21.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">윤상 1집</p>
+                                <p class="m_info">윤상</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_22">
                                     <p><img src="../resources/imges/kpop/kpop_22.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">015B 1집</p>                        
+                                <p class="m_info">015B</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_23">
                                     <p><img src="../resources/imges/kpop/kpop_23.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">느낌 1집</p>                        
+                                <p class="m_info">느낌</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_24">
                                     <p><img src="../resources/imges/kpop/kpop_24.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">솔리드 1집</p>                        
+                                <p class="m_info">솔리드</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_25">
                                     <p><img src="../resources/imges/kpop/kpop_25.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">REF 1집</p>                        
+                                <p class="m_info">REF</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_26">
                                     <p><img src="../resources/imges/kpop/kpop_26.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">이정봉 1집</p>                        
+                                <p class="m_info">이정봉</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_27">
                                     <p><img src="../resources/imges/kpop/kpop_27.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">변진섭 1집</p>                        
+                                <p class="m_info">변진섭</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_28">
                                     <p><img src="../resources/imges/kpop/kpop_28.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">다비치 1집</p>                        
+                                <p class="m_info">다비치</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_29">
                                     <p><img src="../resources/imges/kpop/kpop_29.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">드렁큰타이거 1집</p>                        
+                                <p class="m_info">드렁큰타이거</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_30">
                                     <p><img src="../resources/imges/kpop/kpop_30.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">박희수 1집</p>                        
+                                <p class="m_info">박희수</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->    
                     <div class="m_content main2_kpop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_01">
                                     <p><img src="../resources/imges/kpop/kpop_01.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">러블리즈 1집</p>
+                                <p class="m_info">러블리즈</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_02">
                                     <p><img src="../resources/imges/kpop/kpop_02.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">우예린 1집</p>                        
+                                <p class="m_info">우예린</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_03">
                                     <p><img src="../resources/imges/kpop/kpop_03.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">레드벨벳 1집</p>                        
+                                <p class="m_info">레드벨벳</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_04">
                                     <p><img src="../resources/imges/kpop/kpop_04.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">소우주 1집</p>                        
+                                <p class="m_info">소우주</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_05">
                                     <p><img src="../resources/imges/kpop/kpop_05.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">와이찬 1집</p>                        
+                                <p class="m_info">와이찬</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_06">
                                     <p><img src="../resources/imges/kpop/kpop_06.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">정피트 1집</p>                        
+                                <p class="m_info">정피트</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_07">
                                     <p><img src="../resources/imges/kpop/kpop_07.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">더 어쿠스틱 1집</p>                        
+                                <p class="m_info">더 어쿠스틱</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_08">
                                     <p><img src="../resources/imges/kpop/kpop_08.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">민제 1집</p>                        
+                                <p class="m_info">민제</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_09">
                                     <p><img src="../resources/imges/kpop/kpop_09.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">어라운드 1집</p>                        
+                                <p class="m_info">어라운드</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=kpop_10">
                                     <p><img src="../resources/imges/kpop/kpop_10.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">깜장고무신 1집</p>                        
+                                <p class="m_info">깜장고무신</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
                     <div class="m_content main2_pop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_11">
                                     <p><img src="../resources/imges/pop/pop_11.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">휘트니 휴스톤 1집</p>
+                                <p class="m_info">휘트니 휴스톤</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_12">
                                     <p><img src="../resources/imges/pop/pop_12.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">시크릿가든 1집</p>                        
+                                <p class="m_info">시크릿가든</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_13">
                                     <p><img src="../resources/imges/pop/pop_13.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">뮤즈 1집</p>                        
+                                <p class="m_info">뮤즈</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_14">
                                     <p><img src="../resources/imges/pop/pop_14.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">비욘세 1집</p>                        
+                                <p class="m_info">비욘세</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_15">
                                     <p><img src="../resources/imges/pop/pop_15.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">게리무어 1집</p>                        
+                                <p class="m_info">게리무어</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_16">
                                     <p><img src="../resources/imges/pop/pop_16.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">테일러 스위프트 1집</p>                        
+                                <p class="m_info">테일러 스위프트</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_17">
                                     <p><img src="../resources/imges/pop/pop_17.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">스콜피온즈 1집</p>                        
+                                <p class="m_info">스콜피온즈</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_18">
                                     <p><img src="../resources/imges/pop/pop_18.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">저스틴 비버 1집</p>                        
+                                <p class="m_info">저스틴 비버</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_19">
                                     <p><img src="../resources/imges/pop/pop_19.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">퀸 1집</p>                        
+                                <p class="m_info">퀸</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_20">
                                     <p><img src="../resources/imges/pop/pop_20.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">메탈리카 1집</p>                        
+                                <p class="m_info">메탈리카</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->	
                     <div class="m_content main2_pop">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_01">
                                     <p><img src="../resources/imges/pop/pop_01.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">브리트니 스피어스 1집</p>
+                                <p class="m_info">브리트니 스피어스</p>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_02">
                                     <p><img src="../resources/imges/pop/pop_02.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">제시카 심슨 1집</p>                        
+                                <p class="m_info">제시카 심슨</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_03">
                                     <p><img src="../resources/imges/pop/pop_03.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">에이스 오브 베이스 1집</p>                        
+                                <p class="m_info">에이스 오브 베이스</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_04">
                                     <p><img src="../resources/imges/pop/pop_04.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">머라이어캐리 1집</p>                        
+                                <p class="m_info">머라이어캐리</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_05">
                                     <p><img src="../resources/imges/pop/pop_05.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">셀린디온 1집</p>                        
+                                <p class="m_info">셀린디온</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_06">
                                     <p><img src="../resources/imges/pop/pop_06.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">케이티 페리 1집</p>                        
+                                <p class="m_info">케이티 페리</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_07">
                                     <p><img src="../resources/imges/pop/pop_07.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">스위트 박스 1집</p>                        
+                                <p class="m_info">스위트 박스</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_08">
                                     <p><img src="../resources/imges/pop/pop_08.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">마룬5 1집</p>                        
+                                <p class="m_info">마룬5</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_09">
                                     <p><img src="../resources/imges/pop/pop_09.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">노다웃 1집</p>                        
+                                <p class="m_info">노다웃</p>                        
                             </li>
                             <li>
-                                <a href="">
+                                <a href="info?record=pop_10">
                                     <p><img src="../resources/imges/pop/pop_10.jpg" alt=""></p>
                                 </a>
-                                <p class="m_info">토니 블랙스톤 1집</p>                        
+                                <p class="m_info">토니 블랙스톤</p>                        
                             </li>
                         </ul>
                     </div> <!--.m_content-->
@@ -580,7 +580,7 @@
                     <p><a href="">해외</a></p>                                        
                 </div>  <!--.m_kind_02-->
                 <div class="m_more">                    
-                    <a href="">
+                    <a href="../music/hit_album">
                         <p>더보기
                             <span><img src="../resources/imges/icon_plus.png" alt=""></span>
                         </p>
@@ -593,64 +593,64 @@
                 <div class="m_content">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_21">
                                 <p><img src="../resources/imges/pop/pop_21.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">아델 1집</p>
+                            <p class="m_info">아델</p>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_22">
                                 <p><img src="../resources/imges/pop/pop_22.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">케니지 1집</p>                        
+                            <p class="m_info">케니지</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_23">
                                 <p><img src="../resources/imges/pop/pop_23.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">마돈나 1집</p>                        
+                            <p class="m_info">마돈나</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_24">
                                 <p><img src="../resources/imges/pop/pop_24.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">제이지 1집</p>                        
+                            <p class="m_info">제이지</p>                        
                         </li>
                         <li>
-                            <a href="">                                
+                            <a href="info?record=pop_25">                                
                                 <p><img src="../resources/imges/pop/pop_25.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">세비지가든 1집</p>                        
+                            <p class="m_info">세비지가든</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_26">
                                 <p><img src="../resources/imges/pop/pop_26.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">제니퍼로페즈 1집</p>                        
+                            <p class="m_info">제니퍼로페즈</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_27">
                                 <p><img src="../resources/imges/pop/pop_27.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">글렌메데이로스 1집</p>                        
+                            <p class="m_info">글렌메데이로스</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_28">
                                 <p><img src="../resources/imges/pop/pop_28.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">레드제플린 1집</p>                        
+                            <p class="m_info">레드제플린</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_29">
                                 <p><img src="../resources/imges/pop/pop_29.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">리한나 1집</p>                        
+                            <p class="m_info">리한나</p>                        
                         </li>
                         <li>
-                            <a href="">
+                            <a href="info?record=pop_30">
                                 <p><img src="../resources/imges/pop/pop_30.jpg" alt=""></p>
                             </a>
-                            <p class="m_info">크랙데이빗 1집</p>                        
+                            <p class="m_info">크랙데이빗</p>                        
                         </li>
                     </ul>
                 </div>  <!--.m_content-->                             

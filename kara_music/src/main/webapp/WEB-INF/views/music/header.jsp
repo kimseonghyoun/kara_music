@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>  
     <script src="../resources/js/header.js"></script>  
+    <script src="../resources/js/member.js"></script> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
    	<!-- 부트스트랩 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
 </head>
 <body>
 	<header id="header">
@@ -22,10 +23,10 @@
             <h1 class="h_logo">로고</h1>
             <nav class="h_gnb">
                 <ul>
-                    <li><a href="">최신앨범</a></li>
+                    <li><a href="../music/new_album">최신앨범</a></li>
                     <li><a href="">음반순위</a></li>
-                    <li><a href="">음반소개</a></li>
-                    <li><a href="">뮤직비디오</a></li>
+                    <li><a href="../music/hit_album">인기앨범</a></li>
+                    <li><a href="../music/music_video">뮤직비디오</a></li>
                 </ul>
             </nav> <!--.h_gnb-->
             
@@ -60,8 +61,8 @@
 						<div class="modal-body">
 							<div>						
 								<div> 							                    	                        
-                        			<input type="text" id="id" name="id" placeholder="아이디입력(7~10자리)"><br>                        
-                        			<input type="password" id="pwd" name="pwd" placeholder="패스워드 입력(7~10자리)"><br>
+                        			<input type="text" id="login_id" name="login_id" placeholder="아이디입력(7~10자리)"><br>                        
+                        			<input type="password" id="login_pwd" name="login_pwd" placeholder="패스워드 입력(7~10자리)"><br>
                     			</div>    
                     			<div class="m_search">
                         			<ul>
@@ -80,7 +81,7 @@
 			</div>            
         </form>
         
-        <form action="">
+        <form id="frmMember" action="../music/mainPost" method="post" onsubmit="return checkMember();">
 			<!-- 모달 영역 -->
 			<div id="pop_join" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog modal-dialog-centered" role="document">
@@ -92,29 +93,29 @@
 							<div>		                                          
 		                     	<ul>
 		                         	<li>
-		                             	<label for="id" name="id">아이디<span>＊</span></label>        
-		                             	<input type="text" id="id" class="id" placeholder="아이디입력(7~10자리)" required>                                
+		                             	<label for="user_id">아이디<span>＊</span></label>        
+		                             	<input type="text" id="user_id" class="user_id" name="user_id" placeholder="아이디입력(7~10자리)" required>                                
 		                         	</li>
 		                         	<li>
-		                             	<button type="button" id="id_chk" class="btns id_chk" value="아이디중복체크" required>중복체크</button>
+		                             	<button type="button" id="id_chk" class="btns id_chk" value="아이디중복체크">중복체크</button>
 		                         	</li>
 		                         	<li>
-		                             	<label for="pwd_01" name="pwd_01">비밀번호<span>＊</span></label>        
-		                             	<input type="password" id="pwd_01" class="pwd_01" placeholder="비밀번호입력(7~10자리)" required>
+		                             	<label for="user_pwd">비밀번호<span>＊</span></label>        
+		                             	<input type="password" id="user_pwd" class="user_pwd" name="user_pwd" placeholder="비밀번호입력(7~10자리)" required>
 		                         	</li>
 		                         	<li>
-		                             	<label for="pwd_02" name="pwd_02">비밀번호 확인<span>＊</span></label>        
-		                             	<input type="password" id="pwd_02" class="pwd_02" required>
+		                             	<label for="pwd_chk">비밀번호 확인<span>＊</span></label>        
+		                             	<input type="password" id="pwd_chk" class="pwd_chk" name="pwd_chk" required>
 		                         	</li>                        
 		                         	<li>
-		                             	<label for="nm" name="nm">이름<span>＊</span></label>        
-		                             	<input type="text" id="nm" class="nm" required>
+		                             	<label for="user_nm" >이름<span>＊</span></label>        
+		                             	<input type="text" id="user_nm" class="user_nm" name="user_nm"  required>
 		                         	</li>                        
 		                         	<li>		                         		  
-		                             	<label name="mail_text">이메일<span>＊</span></label>		                             	        
-		                             	<input type="text" id="mail_01" class="mail_01" required>
+		                             	<label for="mail_01">이메일<span>＊</span></label>		                             	        
+		                             	<input type="text" id="mail_01" class="mail_01" name="mail_01" required>
 		                             	<span>@</span>
-		                            	<input type="text" id="mail_02" class="mail_02" required>
+		                            	<input type="text" id="mail_02" class="mail_02" name="mail_02" required>
 		                            	<select id="mail_03" class="mail_03" name="mail_03">
 		                                	<option value="-1">자동입력</option>
 		                                	<option value="naver.com">naver.com</option>
@@ -123,11 +124,11 @@
 		                                	<option value="nate.com">nate.com</option>
 		                                	<option value="yahoo.com">yahoo.com</option>
 		                            	</select>
-		                            	
+		                            	<input type="hidden" id="email" name="email">		                            	
 		                        	</li>                         
 		                        	<li>
-		                            	<label for="phone" name="phone">연락처<span>＊</span></label>        
-		                            	<input type="text" id="phone" class="phone" placeholder="00000000000" required>
+		                            	<label for="phone">연락처<span>＊</span></label>        
+		                            	<input type="text" id="phone" class="phone" name="phone" placeholder="000-0000-0000" required>
 		                        	</li>                      
 		                    	</ul>		                       
 		                	</div>         			
@@ -141,7 +142,22 @@
 				</div>
 			</div>	
 		</form>
-    
+   		
+   		<div id="pop_chkon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  			<div class="modal-dialog modal-dialog-centered" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title">팝업</h5>        					
+      				</div>
+      				<div class="modal-body">
+        					<p class="p_text">준비중입니다.</p>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-primary exit_3" data-bs-dismiss="modal">닫기</button>        					
+      				</div>
+    			</div>
+  			</div>
+		</div>  
 	 </header> <!--#header-->              
 </body>
 </html>

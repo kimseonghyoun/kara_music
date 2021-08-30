@@ -36,10 +36,7 @@ $(function(){
          $(".m_img_01").append($(img).first());
          $(img).last().hide();
          $(img).first().fadeIn().show();           
-    }    
-
-//  var main2_hap_01 = $(".main2 .main1_kpop").length;
-//  var main2_hap_02 = $(".main2 .main1_pop").length; 
+    }
     
     var main2_hap_01 = $(".main2 .main2_kpop").length;
     var main2_hap_02 = $(".main2 .main2_pop").length;
@@ -264,32 +261,6 @@ $(function(){
         }
 
         img_slide_02(main2_img);
-    }           
-      
-    
-    $(".p_work").on("click",fn_work); 
-
-    function fn_work(e){            
-        
-        e.preventDefault(); 
-        
-        var cw = screen.availWidth;     //화면 넓이
-        var ch = screen.availHeight;    //화면 높이
-        
-        var url = "";       
-        var wid = 0;    //띄울 창의 넓이
-        var hei = 0;    //띄울 창의 높이
-        var wi1 = 0;    //가운데 띄우기위한 창의 x위치
-        var he1 = 0;    //가운데 띄우기위한 창의 y위치       
-                
-        if($(this).hasClass("p_work")){
-            url = './work';
-            wid = '450';
-            hei = '200';
-            wi1 = (cw-wid)/2;       
-            he1 = (ch-hei)/2;       
-        }   
-        
-        window.open(url,'./blank','left='+wi1+',top='+he1+',width='+wid+',height='+hei+'');
     }    
+    
 });
