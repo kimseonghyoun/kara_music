@@ -86,7 +86,7 @@ a{
     text-indent: -99999px;
     position: absolute;
     top: 25px;
-    right: 180px;
+    right: 200px;
 }
 
 .f_cart a{
@@ -98,7 +98,7 @@ a{
     text-indent: -99999px;
     position: absolute;
     top: 25px;
-    right: 130px;
+    right: 150px;
 }
 
 .f_cart .count{
@@ -113,7 +113,7 @@ a{
     text-align: center;
     position: absolute;
     top: 17px;
-    right: 125px;
+    right: 145px;
 }
 
 .h_member{
@@ -138,6 +138,12 @@ a{
 .h_member li a{
     color: #333;
     font-size: 15px;
+}
+
+.h_logMsg{
+    position: absolute;
+    top: 55px;    
+    right: 0;
 }
 
 input[type='text'],input[type='password']{

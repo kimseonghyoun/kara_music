@@ -1,5 +1,7 @@
 package org.zerock.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.MemberVO;
@@ -14,13 +16,32 @@ public class MusicServiceImpl implements MusicService{
 	
 	@Override
 	public MusicVO info(String record) {
-		// TODO Auto-generated method stub
+		// 앨범 내역
 		return mapper.info(record);		
 	}
 
 	@Override
 	public void member(MemberVO member) {
-		// TODO Auto-generated method stub
+		// 회원 가입
 		mapper.member(member);
-	}	
+	}
+	
+	@Override
+	public MemberVO idCheck(String user_id) {
+		// 로그인 체크
+		return mapper.idCheck(user_id);		
+	}
+
+	@Override
+	public MemberVO loginChk(MemberVO member) {
+		// 로그인 체크
+		return mapper.loginChk(member);		
+	}
+
+	@Override
+	public ArrayList<MusicVO> schRank() {
+		// 앨범 순위
+		return mapper.schRank();
+	}
+	
 }

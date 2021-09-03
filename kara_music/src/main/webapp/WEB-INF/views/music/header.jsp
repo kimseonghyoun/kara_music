@@ -1,3 +1,4 @@
+<%@page import="org.zerock.domain.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,18 +16,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
    	<!-- 부트스트랩 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+			
+<%
+	MemberVO member = (MemberVO)session.getAttribute("member");
+	System.out.println("session = "+member);
+%>		
 </head>
 <body>
 	<header id="header">
         <div class="header_in">
             <h1 class="h_logo">로고</h1>
-            <nav class="h_gnb">
+            <nav class="h_gnb">            	
                 <ul>
                     <li><a href="../music/new_album">최신앨범</a></li>
-                    <li><a href="">음반순위</a></li>
+                    <li><a href="../music/hit_rank">음반순위</a></li>
                     <li><a href="../music/hit_album">인기앨범</a></li>
-                    <li><a href="../music/music_video">뮤직비디오</a></li>
+                    <li><a href="../music/music_video">뮤직비디오</a></li>                    
                 </ul>
             </nav> <!--.h_gnb-->
             
@@ -44,13 +50,38 @@
 
             <div class="h_member">
                 <ul>
-                    <li><a href="#" class="p_login">로그인</a></li>
-                    <li><a href="#" class="p_join">회원가입</a></li>                        
+                	<% 
+                		if(member == null){
+                	%>		
+                    	<li><a href="#" class="p_login">로그인</a></li>
+                    <%
+                    	}else{
+                    %>                	
+                    	<li><a href="../music/logout" class="p_logout">로그아웃</a></li>
+                    <%
+                    	}
+                    %>                    
+                        
+                    <li><a href="#" class="p_join">회원가입</a></li>                                         
                 </ul>
             </div> <!--.h_member-->
+            
+            <div class="h_logMsg">
+            	<% 
+                	if(member != null){
+                %>		            	
+            			<p><span><%=member.getUser_nm() %></span>님  환영합니다.</p>
+            	<%
+            		}else{
+            	%>
+            			<p></p>
+            	<%
+            		}
+            	%>
+            </div> <!--.h_login-->
         </div> <!--.header_in-->
 				
-		<form action="">			
+		<form id="frmLogin" action="../music/loginPost" method="post" onsubmit="return checkLogin();">			
 			<div id="pop_login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  
 			
 				<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
@@ -61,11 +92,11 @@
 						<div class="modal-body">
 							<div>						
 								<div> 							                    	                        
-                        			<input type="text" id="login_id" name="login_id" placeholder="아이디입력(7~10자리)"><br>                        
-                        			<input type="password" id="login_pwd" name="login_pwd" placeholder="패스워드 입력(7~10자리)"><br>
+                        			<input type="text" id="login_id" name="user_id" placeholder="아이디입력(7~10자리)" required><br>                        
+                        			<input type="password" id="login_pwd" name="user_pwd" placeholder="패스워드 입력(7~10자리)" required><br>
                     			</div>    
                     			<div class="m_search">
-                        			<ul>
+                        			<ul>                        						
                             			<li><a href="#" class="p_work">아이디찾기</a></li>
                             			<li><a href="#" class="p_work">비밀번호찾기</a></li>                                                                                    
                         			</ul>
@@ -73,7 +104,7 @@
 							</div>						
 						</div>
 						<div class="modal-footer">
-							<input type="button" value="로그인" class="btn btn-primary" name="btn">                          
+							<input type="submit" value="로그인" class="btn btn-primary" name="btn">                          
                         	<input type="button" value="닫기" class="btn btn-primary exit_1" name="btn">						
 						</div>
 					</div>
@@ -95,6 +126,10 @@
 		                         	<li>
 		                             	<label for="user_id">아이디<span>＊</span></label>        
 		                             	<input type="text" id="user_id" class="user_id" name="user_id" placeholder="아이디입력(7~10자리)" required>                                
+		                         	</li>
+		                         	<li>
+		                         		<p id="id_text"></p>
+		                         		<input type="hidden" id="hid_text" value="0">
 		                         	</li>
 		                         	<li>
 		                             	<button type="button" id="id_chk" class="btns id_chk" value="아이디중복체크">중복체크</button>

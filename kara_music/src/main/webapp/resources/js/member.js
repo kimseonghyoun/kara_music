@@ -17,6 +17,8 @@ function checkMember(){
 	var mail_02 = $("#mail_02").val();
 	var email   = mail_01+"@"+mail_02;
 	
+	var idChk = $("#hid_text").val();
+		
 	$("#email").val(email);
 		
 	if(uid == null || uid == ""){
@@ -54,5 +56,116 @@ function checkMember(){
 		return false;
 	}	
 	
+	if(idChk != '1'){
+		alert("아이디 중복체크를 해주세요");
+		return false;
+	}	
 }
+
+
+function checkLogin(){
+		
+	var uid  = $("#login_id").val();	
+	var pwd  = $("#login_pwd").val();	
+	
+	var idregex = /^[A-Za-z\d]{7,10}$/;    			
+	var idres   = idregex.exec(uid);	
+		
+	if(uid == null || uid == ""){
+		alert("아이디를 입력하세요");
+		return false;
+	}
+	
+	if(idres == null || idres == ""){
+		alert("아이디를 영어대소문자/숫자 7~10자리 입력하세요");
+		return false;
+	}
+	
+	if(pwd == null || pwd == ""){
+		alert("비밀번호를 입력하세요");
+		return false;
+	}
+         
+	if(!(pwd.length >= 7 && pwd.length <= 10)){
+		alert("비밀번호를 7~10자리 입력하세요");
+		return false;
+	}	
+	
+}
+
+
+function searchLogin(){
+	
+	var uid  = $("#log_id").val();	
+	var pwd  = $("#log_pwd").val();	
+	
+	var idregex = /^[A-Za-z\d]{7,10}$/;    			
+	var idres   = idregex.exec(uid);	
+		
+	if(uid == null || uid == ""){
+		alert("아이디를 입력하세요");
+		return false;
+	}
+	
+	if(idres == null || idres == ""){
+		alert("아이디를 영어대소문자/숫자 7~10자리 입력하세요");
+		return false;
+	}
+	
+	if(pwd == null || pwd == ""){
+		alert("비밀번호를 입력하세요");
+		return false;
+	}
+         
+	if(!(pwd.length >= 7 && pwd.length <= 10)){
+		alert("비밀번호를 7~10자리 입력하세요");
+		return false;
+	}
+
+}
+
+$(function(){	
+	
+	$("#id_chk").on("click",function(){ 	
+		
+		var user_id = $("#user_id").val();
+		
+		if(user_id == null || user_id == ""){
+			alert("아이디를 입력하세요");
+			return;
+		}					
+		
+		var idregex = /^[A-Za-z\d]{7,10}$/;    			
+		var idres   = idregex.exec(user_id);	
+				
+		if(idres == null || idres == ""){
+			alert("아이디를 영어대소문자/숫자 7~10자리 입력하세요");
+			return;
+		}		
+		
+		var idChk = {user_id : user_id}
+		
+		$.ajax({
+			url : "/music/idCheck",
+			type : "post",
+			data : idChk,
+			dataType:"json",
+			success : function(res){				
+				if(res == 1){				
+					$("#hid_text").val("0");
+					$("#id_text").text("이미 사용중인 아이디입니다.");					
+					$("#id_text").attr("style","color:#f00");
+					
+				}else{					
+					$("#hid_text").val("1");
+					$("#id_text").text("아이디 사용가능");					
+					$("#id_text").attr("style","color:#f00");
+				}
+			}
+		
+		});
+	});
+	
+});
+
 

@@ -10,5 +10,29 @@
 	<insert id="member"> 
   		insert into user_table(user_id, user_pwd, user_nm, email, phone, joindate)
 		values(#{user_id}, #{user_pwd}, #{user_nm}, #{email}, #{phone}, sysdate());			
-	</insert>
+	</insert>	
+	
+	<select id="idCheck" resultType="org.zerock.domain.MemberVO">
+		select * from user_table where user_id = #{user_id};
+	</select>
+	
+	<select id="loginChk" resultType="org.zerock.domain.MemberVO">
+		select * from user_table where user_id = #{user_id} and user_pwd = #{user_pwd};
+	</select>
+	
+	<select id="schRank" resultType="org.zerock.domain.MusicVO">
+		 select t.record as record, t.rname as rname, t.img as img, t.track1 as track1, t.singer as singer, t.company as company 			 
+		   from    
+			    (select t2.*  					  
+              		  , @rownum := @rownum + 1 AS rnum
+		    	   from buy_table t1
+				   left outer join 
+						album_table t2
+					 on t1.record = t2.record
+				   JOIN ( SELECT @rownum := 0) r
+				  order by 
+						BUY_CNT desc
+				  ) t       
+		    where rnum between 1 and 15;    
+	</select>
 </mapper>	

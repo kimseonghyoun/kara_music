@@ -14,7 +14,8 @@ $(function(){
     	$("#mail_01").val("");
     	$("#mail_02").val("");
     	$("#email").val("");
-    	$("#phone").val("");    	
+    	$("#phone").val("");  
+    	$("#id_text").text("");    	
     }
     
     fn_clearMember();
@@ -51,7 +52,7 @@ $(function(){
 	$('.exit_3').on('click', function(){
 		myModal_03.hide();	
 	});
-	
+		
 	
 	$("#mail_02").on("change",fn_change);
     $("#mail_03").on("change",fn_change);

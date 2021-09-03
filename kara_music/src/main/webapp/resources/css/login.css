@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap{
+    width: 100%;
+    min-width: 1140px; 
+    position: relative;
+}
+
+#container{
+	width: 300px;
+    margin: 150px auto;    
+    position: relative;
+    overflow: hidden;        
+}
+
+.main_info{
+	margin: 50px 0;
+	display: flex;	 
+}
+
+
+
