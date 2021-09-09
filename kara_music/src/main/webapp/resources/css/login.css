@@ -43,5 +43,9 @@ a{
 	display: flex;	 
 }
 
+.group ul{
+	display: flex;
+	justify-content: space-around;
+}
 
 

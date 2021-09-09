@@ -16,8 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 import org.zerock.domain.MemberVO;
 import org.zerock.domain.MusicVO;
+import org.zerock.domain.PageDTO;
+import org.zerock.domain.RegistVO;
 import org.zerock.service.MusicService;
 
 @Controller
@@ -33,6 +37,14 @@ public class MusicController {
 	@GetMapping(value="main")
 	public void main() {
 		logger.info("music / main");
+	}
+	
+	//	검색	
+	@GetMapping(value="sch_album")
+	public void schData(@RequestParam("m_sch") String m_sch, Model model) {		
+		ArrayList<MusicVO> vo = service.schData(m_sch);
+		logger.info("music / schData : "+vo);
+		model.addAttribute("vo", vo);		
 	}
 	
 	//	회원 가입
@@ -130,4 +142,26 @@ public class MusicController {
 		model.addAttribute("info", service.info(record));		
 	}
 	
+	//	게시판 화면
+	@PostMapping(value="register")
+	public void register() {
+		logger.info("music / register");
+	}
+	
+	// 게시판 등록
+	@PostMapping(value="regist_send")
+	public String regist(RegistVO board) {
+	 	logger.info("board/regist_send : "+board);			
+		service.regist(board);		
+		return "redirect:/music/board_list";
+	}
+	
+	// 게시판 리스트
+	@GetMapping(value="board_list")
+	public void board_list(Criteria cri, Model model) {		
+		logger.info("music / board_list");
+		int count = service.getCount(cri);		
+		model.addAttribute("list",service.getWithPaging(cri));
+		model.addAttribute("pageMaker", new PageDTO(cri, count));				
+	}
 }

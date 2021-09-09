@@ -1,6 +1,7 @@
 <%@page import="org.zerock.domain.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,10 +19,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 			
-<%
-	MemberVO member = (MemberVO)session.getAttribute("member");
-	System.out.println("session = "+member);
-%>		
+
 </head>
 <body>
 	<header id="header">
@@ -36,48 +34,51 @@
                 </ul>
             </nav> <!--.h_gnb-->
             
-            <div class="h_util">                    
-                <ul>
-                    <li class="f_search">
-                        <a href="#">검색하기</a>
-                    </li>
-                    <li class="f_cart">
-                        <a href="#">장바구니</a>
-                        <span class="count">0</span>
-                    </li>    
-                </ul>
-            </div> <!--.h_util-->
-
+            <form id="frmSch" action="../music/sch_album" method="get">
+            	<div class="h_util">                    
+                	<ul>
+                		<li>
+                			<div class="form-group">    				
+    							<input type="text" id="m_sch" class="m_sch" name="m_sch" placeholder="검색 2자리 이상 입력">    						  		
+    							<input type="text" id="h_sch">
+  							</div>
+                		</li>
+                    	<li class="f_search">                    	
+                        	<a href="#">검색하기</a>
+                    	</li>
+                    	<li class="f_cart">
+                        	<a href="#">장바구니</a>
+                        	<span class="count">0</span>
+                    	</li>    
+                	</ul>
+            	</div> <!--.h_util-->
+			</form>
             <div class="h_member">
                 <ul>
-                	<% 
-                		if(member == null){
-                	%>		
-                    	<li><a href="#" class="p_login">로그인</a></li>
-                    <%
-                    	}else{
-                    %>                	
-                    	<li><a href="../music/logout" class="p_logout">로그아웃</a></li>
-                    <%
-                    	}
-                    %>                    
+                	<c:choose>                		
+                		<c:when test="${member == null}">
+                			<li><a href="#" class="p_login">로그인</a></li>
+                		</c:when>                		
+                		<c:otherwise>
+	                    	<li><a href="../music/logout" class="p_logout">로그아웃</a></li>
+                    	</c:otherwise>
+                    </c:choose>
                         
                     <li><a href="#" class="p_join">회원가입</a></li>                                         
                 </ul>
             </div> <!--.h_member-->
-            
+            <!--  -->
+            <form id="frmReg" action="../music/board_list" method="get" onsubmit="return checkRegist();">
+            	<div class="h_board">            	
+            		<button type="submit" id="id_regist" class="btns id_regist" value="게시판">게시판</button>
+            		<!--  -->	
+            	</div>
+            </form>	
+            <input type="hidden" id="hid_regist" name="hid_regist" value="${member.user_id}">
             <div class="h_logMsg">
-            	<% 
-                	if(member != null){
-                %>		            	
-            			<p><span><%=member.getUser_nm() %></span>님  환영합니다.</p>
-            	<%
-            		}else{
-            	%>
-            			<p></p>
-            	<%
-            		}
-            	%>
+					<c:if test="${member != null }">
+   	        			<p><span>${member.user_nm}</span>님  환영합니다.</p>
+					</c:if>
             </div> <!--.h_login-->
         </div> <!--.header_in-->
 				
@@ -94,13 +95,7 @@
 								<div> 							                    	                        
                         			<input type="text" id="login_id" name="user_id" placeholder="아이디입력(7~10자리)" required><br>                        
                         			<input type="password" id="login_pwd" name="user_pwd" placeholder="패스워드 입력(7~10자리)" required><br>
-                    			</div>    
-                    			<div class="m_search">
-                        			<ul>                        						
-                            			<li><a href="#" class="p_work">아이디찾기</a></li>
-                            			<li><a href="#" class="p_work">비밀번호찾기</a></li>                                                                                    
-                        			</ul>
-                    			</div> 
+                    			</div>                    			
 							</div>						
 						</div>
 						<div class="modal-footer">

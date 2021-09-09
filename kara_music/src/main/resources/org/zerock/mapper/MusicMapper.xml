@@ -7,6 +7,15 @@
 		select * from album_table where record = #{record};
 	</select>
 	
+	<select id="schData" resultType="org.zerock.domain.MusicVO">
+		select * 
+  		  from album_table 
+ 	     where (rname like concat('%', #{m_sch}, '%') or track1 like concat('%', #{m_sch}, '%') 
+    	    or track2 like concat('%', #{m_sch}, '%') or track3 like concat('%', #{m_sch}, '%') 
+    	    or track4 like concat('%', #{m_sch}, '%') or track5 like concat('%', #{m_sch}, '%') 
+    	    or singer like concat('%', #{m_sch}, '%'));
+	</select>
+	
 	<insert id="member"> 
   		insert into user_table(user_id, user_pwd, user_nm, email, phone, joindate)
 		values(#{user_id}, #{user_pwd}, #{user_nm}, #{email}, #{phone}, sysdate());			
@@ -35,4 +44,36 @@
 				  ) t       
 		    where rnum between 1 and 15;    
 	</select>
+	
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+			select IFNULL(max(bno)+1,1) bno from board_table;
+		</selectKey>
+  			
+		insert into board_table(bno, title, content, user_id, writer) 
+		values(#{bno}, #{title}, #{content}, #{user_id}, #{writer})	 	
+	</insert>
+	
+	<select id="getWithPaging" resultType="org.zerock.domain.RegistVO">
+  		
+  			select bno, title, content, user_id, writer, date_format(regdate,'%Y-%m-%d') as regdate, 
+			       date_format(updatedate,'%Y-%m-%d') as updatedate, replycnt  			  
+  			  from 
+	   				(select @rownum:=@rownum+1 as rownum, 
+               				bno, title, content, user_id, writer, regdate, updatedate, replycnt
+          			   from (select @rownum:=0) as rownum
+          				  , board_table
+          			  where 1=1          		  
+          			 order by bno desc			               			  
+       				) pageboard
+       	<![CDATA[			
+  			 where rownum > (#{pageNum}-1) * #{amount} 
+  			   and rownum <= #{pageNum} * #{amount}    
+  		]]>	  			 
+  	</select>
+  	
+  	<select id="getCount" resultType="int">
+  			select count(*) 
+  			  from board_table  				        
+  	</select>
 </mapper>	

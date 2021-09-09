@@ -72,6 +72,6 @@ $(function(){
             
             $("#mail_02").val(data);        
         }
-    }    
+    }   
     
 });

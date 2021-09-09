@@ -124,6 +124,43 @@ function searchLogin(){
 
 }
 
+function checkRegist(){	
+	
+	var regstId = $("#hid_regist").val();
+	
+	if(regstId == null || regstId == ""){
+		alert("로그인을 하세요");
+		return false;
+	}
+}
+
+function checkReg(){	
+	
+	var regstId = $("#hid_reg").val();
+	
+	if(regstId == null || regstId == ""){
+		alert("로그인을 하세요");
+		return false;
+	}
+}
+
+function checkBoard(){
+	
+	var tit = $("#title").val(); 
+	var con = $("#content").val();
+	
+	if(tit == null || tit == ""){
+		alert("제목을 입력 하세요");
+		return false;
+	}
+	
+	if(con == null || con == ""){
+		alert("내용을 입력 하세요");
+		return false;
+	}	
+}
+
+
 $(function(){	
 	
 	$("#id_chk").on("click",function(){ 	
@@ -164,6 +201,23 @@ $(function(){
 			}
 		
 		});
+	});
+		
+	$(".f_search a").on("click",function(){		
+		
+		var sch = $("#m_sch").val();
+		
+		if(sch == null || sch == ""){
+			alert("검색조건을 2자리 이상 입력하세요");
+			return false;
+		}
+		
+		if(!(sch.length >= 2)){
+			alert("검색조건을 2자리 이상 입력하세요");
+			return false;
+		}	
+		
+		$("#frmSch").submit();
 	});
 	
 });
